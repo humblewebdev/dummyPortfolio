@@ -1,0 +1,50 @@
+.container {
+    margin: auto;
+    width: 980px;
+}
+
+nav {
+    background: green;
+    text-align: center;
+}
+
+footer {
+    background: yellow;
+    text-align: center;
+}
+
+.row {
+    margin-left: -15px; /* offset left margin from col class*/
+    margin-right: -15px; /* offset right margin from col class*/
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section {
+    background: red;
+}
+
+aside {
+    background: blue;
+}
+
+@media screen and (max-width: 640px){
+    .container {
+        width: 640px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container {
+        width: 480px;
+    }
+}
